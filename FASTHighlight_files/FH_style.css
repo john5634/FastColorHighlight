@@ -1,0 +1,124 @@
+:root {
+  --txtColor: black;
+}
+.column {
+		  float: left;
+		  width: 50%;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+		
+mark.c1 {
+  background-color: rgb(198, 227, 255);
+  color: var(--txtColor);
+}
+.c1 {
+  background-color: rgb(255, 215, 215);
+  color: var(--txtColor);
+}
+
+.c2 {
+  background-color: rgb(242, 255, 215);
+  color: var(--txtColor);
+}
+
+.c3 {
+  background-color: rgb(255, 236, 215);
+  color: var(--txtColor);
+}
+
+.c4 {
+  background-color: rgb(215, 255, 242);
+  color: var(--txtColor);
+}
+
+.c5 {
+  background-color: rgb(215, 236, 255);
+  color: var(--txtColor);
+}
+
+.c6 {
+  background-color: rgb(236, 215, 255);
+  color: var(--txtColor);
+}
+
+.c7 {
+  background-color: rgb(255, 215, 236);
+  color: var(--txtColor);
+}
+
+.c8 {
+  background-color: rgb(215, 242, 255);
+  color: var(--txtColor);
+}
+
+.c9 {
+  background-color: rgb(236, 255, 215);
+  color: var(--txtColor);
+}
+
+.c10 {
+  background-color: rgb(255, 215, 255);
+  color: var(--txtColor);
+}
+
+.c11 {
+  background-color: rgb(215, 255, 215);
+  color: var(--txtColor);
+}
+
+.c12 {
+  background-color: rgb(215, 215, 255);
+  color: #FFFFFF;
+}
+
+.c13 {
+  background-color: rgb(255, 215, 182);
+  color: var(--txtColor);
+}
+
+.c14 {
+  background-color: rgb(215, 255, 182);
+  color: var(--txtColor);
+}
+
+.c15 {
+  background-color: rgb(255, 182, 215);
+  color: var(--txtColor);
+}
+
+.c16 {
+  background-color: rgb(182, 215, 255);
+  color: var(--txtColor);
+}
+
+.c17 {
+  background-color: rgb(182, 255, 215);
+  color: var(--txtColor);
+}
+
+.c18 {
+  background-color: rgb(255, 215, 140);
+  color: var(--txtColor);
+}
+
+.c19 {
+  background-color: rgb(215, 140, 255);
+  color: var(--txtColor);
+}
+
+.c20 {
+  background-color: rgb(140, 215, 255);
+  color: var(--txtColor);
+}
+
+
+mark.altCol {
+  background-color: rgb(198, 227, 255);
+  color: black;
+}

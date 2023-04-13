@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://localhost/fasthighlight-main/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>FASTHighlight</title>
+  <!-- Styles -->
+  <link rel="stylesheet" href="./FASTHighlight_files/FH_style.css">
+  <!-- Javascript Files -->
+  <script src="./FASTHighlight_files/FH_Driver.js.download"></script>
+  <script src="./FASTHighlight_files/exampleRangesAndFile.js.download"></script>
+</head>
+
+<body><body">
+  <p>
+    <button style="background: lightcoral;" onclick="addSpansToHTML(markRangeInput)">process text SLOW</button> &nbsp; <button style="background: lawngreen;" onclick="fastHighlight()">process text FAST</button>
+  </p>
+  <p>
+    <button style="background: lightyellow;" onclick="loadInExampleFile()">Load Example File <br>(3.9MB, 19K Spans)</button>
+  </p>
+  <br>
+  <p>
+    <button style="background: rgb(250, 250, 250);" onclick="setRangeSize()">set Ranges</button><br><br>
+    <label>Number of Ranges/Spans up to 9800</label><br>
+    <input id="numberOfRanges" value="9800"><br>
+	<label>Color 1-30</label><br>
+	<input id="colorVal" value="2"><br>    
+  </p>
+         <h3><br>Source File:</h3>
+         <input type="file" name="inputfile" id="inputfile" oninput="openFileFromInput(event)" style="font-size: 18px; color:white;">
+      <div class="row">
+		   <!--div class="column">
+			<pre id="output" class="display-box" onkeydown="return false">HELLO WORLD</pre>
+      </div>-->
+			<div class="column">
+			<pre id="output" contenteditable="true" style="display: block;" class="display-box"><mark></mark><mark>mark.c1 {
+  background-color: rgb(198, 227, 255);
+  color: var(--txtColor);
+}</mark>
+.c1 {
+  background-color: rgb(255, 215, 215);
+  color: var(--txtColor);
+}</pre>
+      </div>
+			<div class="column">
+				<div id="input" style="display: none;" contenteditable="true"><div>mark.c1 {</div><div>&nbsp; background-color: rgb(198, 227, 255);</div><div>&nbsp; color: var(--txtColor);</div><div>}</div><div>.c1 {</div><div>&nbsp; background-color: rgb(255, 215, 215);</div><div>&nbsp; color: var(--txtColor);</div><div>}</div></div>
+			</div>
+	  </div>
+	  
+
+
+
+</body"></body></html>

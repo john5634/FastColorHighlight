@@ -11,7 +11,7 @@
   <script src="exampleRangesAndFile.js"></script>
 </head>
 
-<body onload="loadInExampleFile()">
+<body">
   <p>
     <button style="background: lightcoral;" onclick="addSpansToHTML(markRangeInput)">process text SLOW</button> &nbsp; <button style="background: lawngreen;"onclick="fastHighlight()">process text FAST</button>
   </p>
@@ -29,11 +29,14 @@
          <h3><br>Source File:</h3>
          <input type='file' name='inputfile' id='inputfile' oninput='openFileFromInput(event)' style="font-size: 18px; color:white;">
       <div class="row">
-		   <div class="column">
+		   <!--div class="column">
 			<pre id="output" class="display-box" onkeydown="return false">HELLO WORLD</pre>
+      </div>-->
+			<div class="column">
+			<pre id="output" style="display:none" class="display-box">HELLO WORLD</pre>
       </div>
 			<div class="column">
-				<div id="input" contenteditable="true">HELLO WORLD</pre>
+				<div id="input" style="display:block" contenteditable="true">HELLO WORLD</div>
 			</div>
 	  </div>
 	  
