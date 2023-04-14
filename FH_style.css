@@ -1,6 +1,13 @@
 :root {
   --txtColor: black;
 }
+
+pre{
+	margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px ;
+    margin-left: 0px ;
+}
 .column {
 		  float: left;
 		  width: 50%;
