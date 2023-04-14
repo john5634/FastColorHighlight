@@ -29,6 +29,6 @@ function addHTMLAfter(idToAppendTo,htmlToAppend){
 function getArrayOfInput(id){
 	var startVal = document.getElementById("start-"+id).value;
 	var lengthVal = document.getElementById("length-"+id).value;
-	var objOut= {"start":+startVal,"length":+lengthVal};
+	var objOut= {"start":+startVal,"length":+lengthVal,"color":+id};
 return [objOut]
 }

@@ -1,13 +1,14 @@
 // Inserts desiered string at a given index into a string
 
-function addSpansToHTML(arrayOfStartLensAndColors, divIDToMod, color){
-  var startOfElement = "<mark class='c" + color + "'>";
+function addSpansToHTML(arrayOfStartLensAndColors, divIDToMod){
+  
     
   var endOfElement = "</mark>";
 
   var tmpresult = document.getElementById(divIDToMod).innerText;
   var trackerVal = 0;
   for(var i = 0 ; i < arrayOfStartLensAndColors.length;i++){
+	  var startOfElement = "<mark class='c" + arrayOfStartLensAndColors[i].color + "'>";
       tmpresult = tmpresult.splice((arrayOfStartLensAndColors[i].start+trackerVal), startOfElement);
       trackerVal += startOfElement.length;
 
