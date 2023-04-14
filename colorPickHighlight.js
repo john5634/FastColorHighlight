@@ -53,3 +53,26 @@ function escapeHtml(text) {
 		return map[m];
 	});
 }
+
+		let offsets2 = [];
+		
+	function addHighlightFromSel(){
+		start = window.getSelection().anchorOffset;
+		length = (window.getSelection().focusOffset - start);
+		console.log(length)
+		if(length == 0){return;}
+		if(length < 0 ){
+			start= start+length
+			length = Math.abs(length)
+		}
+		console.log(length)
+		//offsets.push({start,length});
+		appendMatchHtml('match-div')
+		divIdToSet = document.getElementsByClassName('match-div').length
+		document.getElementById("start-"+(divIdToSet-1)).value = start;
+		document.getElementById("length-"+(divIdToSet-1)).value = length;
+	}
+	
+function unHighlight2(divIDToMod){
+	document.getElementById(divIDToMod).innerHTML = document.getElementById(divIDToMod).innerText;
+}
