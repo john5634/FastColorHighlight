@@ -12,113 +12,58 @@
 		  display: table;
 		  clear: both;
 		}
-		
-mark.c1 {
-  background-color: rgb(198, 227, 255);
-  color: var(--txtColor);
+.c1 { 
+	background: #cbf078; 
 }
-.c1 {
-  background-color: rgb(255, 215, 215);
-  color: var(--txtColor);
+.c2 { 
+	background: #f8f398; 
 }
-
-.c2 {
-  background-color: rgb(242, 255, 215);
-  color: var(--txtColor);
+.c3 { 
+	background: #f1b963; 
 }
-
-.c3 {
-  background-color: rgb(255, 236, 215);
-  color: var(--txtColor);
+.c4 { 
+	background: #5be7a9; 
 }
-
-.c4 {
-  background-color: rgb(215, 255, 242);
-  color: var(--txtColor);
+.c5{ 
+	background: #ffaaf0; 
+}	
+.c6 { 
+	background: #d9f2ff; 
 }
-
-.c5 {
-  background-color: rgb(215, 236, 255);
-  color: var(--txtColor);
+.c7 { 
+	background: #a5bdfd; 
 }
-
-.c6 {
-  background-color: rgb(236, 215, 255);
-  color: var(--txtColor);
+.c8 { 
+	background: #40a8c4; 
 }
-
-.c7 {
-  background-color: rgb(255, 215, 236);
-  color: var(--txtColor);
+.c9 { 
+	background: #ecff20; 
 }
-
-.c8 {
-  background-color: rgb(215, 242, 255);
-  color: var(--txtColor);
+.c10 { 
+	background: #ff9d7b; 
 }
-
-.c9 {
-  background-color: rgb(236, 255, 215);
-  color: var(--txtColor);
+.c12 { 
+	background: #ff5001; 
 }
-
-.c10 {
-  background-color: rgb(255, 215, 255);
-  color: var(--txtColor);
+.c13 { 
+	background: #c2c57f; 
 }
-
-.c11 {
-  background-color: rgb(215, 255, 215);
-  color: var(--txtColor);
+.c14 { 
+	background: #fcc88a; 
 }
-
-.c12 {
-  background-color: rgb(215, 215, 255);
-  color: #FFFFFF;
+.c15 { 
+	background: #ff6898; 
 }
-
-.c13 {
-  background-color: rgb(255, 215, 182);
-  color: var(--txtColor);
+.c16 { 
+	background: #40a798; 
 }
-
-.c14 {
-  background-color: rgb(215, 255, 182);
-  color: var(--txtColor);
+.c17 { 
+	background: #f5e1da; 
 }
-
-.c15 {
-  background-color: rgb(255, 182, 215);
-  color: var(--txtColor);
+.c18 { 
+	background: #b6cdbd; 
 }
-
-.c16 {
-  background-color: rgb(182, 215, 255);
-  color: var(--txtColor);
+.c19 { 
+	background: #ddeedf; 
 }
-
-.c17 {
-  background-color: rgb(182, 255, 215);
-  color: var(--txtColor);
-}
-
-.c18 {
-  background-color: rgb(255, 215, 140);
-  color: var(--txtColor);
-}
-
-.c19 {
-  background-color: rgb(215, 140, 255);
-  color: var(--txtColor);
-}
-
-.c20 {
-  background-color: rgb(140, 215, 255);
-  color: var(--txtColor);
-}
-
-
-mark.altCol {
-  background-color: rgb(198, 227, 255);
-  color: black;
-}
+	

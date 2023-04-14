@@ -7,23 +7,13 @@
   <!-- Styles -->
   <link rel="stylesheet" href="FH_style.css">
   <!-- Javascript Files -->
-  <script src="FH_Driver.js"></script>
-  <script src="exampleRangesAndFile.js"></script>
+  <script src="colorPickHighlight.js"></script>
+  <script src="matchesAndRanges.js"></script>
 </head>
 
 <body">
   <p>
-    <button style="background: lightcoral;" onclick="addSpansToHTML(markRangeInput)">process text SLOW</button> &nbsp; <button style="background: lawngreen;"onclick="fastHighlight()">process text FAST</button>
-  </p>
-  <p>
-    <button style="background: lightyellow;" onclick="loadInExampleFile()">Load Example File <br>(3.9MB, 19K Spans)</button>
-  </p>
-  <br>
-  <p>
-    <button style="background: rgb(250, 250, 250);" onclick="setRangeSize()">set Ranges</button><br><br>
-    <label>Number of Ranges/Spans up to 9800</label><br>
-    <input id ="numberOfRanges" value="9800" ></input><br>
-	<label>Color 1-30</label><br>
+    <label>Color 1-30</label><br>
 	<input id ="colorVal" value="2" ></input><br>    
   </p>
          <h3><br>Source File:</h3>
@@ -33,11 +23,37 @@
 			<pre id="output" class="display-box" onkeydown="return false">HELLO WORLD</pre>
       </div>-->
 			<div class="column">
-			<pre id="output" style="display:none" class="display-box">HELLO WORLD</pre>
+			<pre id="output" class="display-box" contenteditable="true">mark.c1 {
+  background-color: rgb(198, 227, 255);
+  color: var(--txtColor);
+}
+.c1 {
+  background-color: rgb(255, 215, 215);
+  color: var(--txtColor);
+}
+
+.c2 {
+  background-color: rgb(242, 255, 215);
+  color: var(--txtColor);
+}
+
+.c3 {
+  background-color: rgb(255, 236, 215);
+  color: var(--txtColor);
+}
+
+.c4 {
+  background-color: rgb(215, 255, 242);
+  color: var(--txtColor);
+}<br><mark class="c3"></mark></pre>
       </div>
 			<div class="column">
-				<div id="input" style="display:block" contenteditable="true">HELLO WORLD</div>
+				<div id="matches" class="match-div">
+				<button style="background: lightyellow;" onclick="appendMatchHtml('match-div')">Add Range<br></button>
+				<button style="background: pink;" onclick="addHtmlForMatch(5)">Delete last entry</button>
+			
 			</div>
+      </div>
 	  </div>
 	  
 </body>
