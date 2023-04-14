@@ -4,7 +4,7 @@ function appendMatchHtml(classToAppend) {
 
 	var html = `
 	<div class="match-div" class="column" style="border-style: solid;" id="user-input-${counthtml}">
-	<button id=${counthtml} style="background: lightcyan;" onclick="addSpansToHTML(getArrayOfInput(${counthtml}),'output')">Highlight</button>
+	<button id=${counthtml} class=c${counthtml} onclick="addSpansToHTML(getArrayOfInput(${counthtml}),'output')">Highlight</button>
 	<br>
 	  <label>Start:</label>
 	  <input class="message-type-inputs" id="start-${counthtml}" type="text" oninput="">
