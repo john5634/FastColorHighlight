@@ -1,24 +1,36 @@
 // Inserts desiered string at a given index into a string
-function addSpansToHTML(markRangeInput, stringToAddMark, color){
+
+function addSpansToHTML(arrayOfStartLensAndColors, divIDToMod, color){
   var startOfElement = "<mark class='c" + color + "'>";
     
   var endOfElement = "</mark>";
 
-  var tmpresult = stringToAddMark;
+  var tmpresult = document.getElementById(divIDToMod).innerText;
   var trackerVal = 0;
-  for(var i = 0 ; i < markRangeInput.length;i++){
-
-      tmpresult = tmpresult.splice((markRangeInput[i].start+trackerVal), startOfElement);
+  for(var i = 0 ; i < arrayOfStartLensAndColors.length;i++){
+      tmpresult = tmpresult.splice((arrayOfStartLensAndColors[i].start+trackerVal), startOfElement);
       trackerVal += startOfElement.length;
 
-    tmpresult = tmpresult.splice((markRangeInput[i].start+(markRangeInput[i].length)+trackerVal), endOfElement);
+    tmpresult = tmpresult.splice((arrayOfStartLensAndColors[i].start+(arrayOfStartLensAndColors[i].length)+trackerVal), endOfElement);
     trackerVal += endOfElement.length;
   }
   tmpresult = escapeHtml(tmpresult);
   tmpresult = tmpresult.replaceAll(escapeHtml(startOfElement),startOfElement);
   tmpresult = tmpresult.replaceAll(escapeHtml(endOfElement),endOfElement);
-  return tmpresult;
+  
+  document.getElementById(divIDToMod).innerHTML = tmpresult;
+  
+  //return tmpresult;
 }
+
+// Function To splice a string (SUPER slowww, hence the need for a worker)
+String.prototype.splice = function(index, string) {
+  if (index > 0) {
+    return this.substring(0, index) + string + this.substr(index);
+  }
+  return string + this;
+};
+
 // Replaces HTML Special Characters with their equivalanet code for display in text fields
 function escapeHtml(text) {
 	var map = {
@@ -30,7 +42,7 @@ function escapeHtml(text) {
 		"$": '&dollar;'
 	};
 
-	return text.replace(/[$<>"']/g, function(m) {
+	return text.toString().replace(/[$<>"']/g, function(m) {
 		return map[m];
 	});
 }
