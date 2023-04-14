@@ -4,7 +4,7 @@ function appendMatchHtml(classToAppend) {
 
 	var html = `
 	<div class="match-div" class="column" style="border-style: solid;" id="user-input-${counthtml}">
-	<button id=${counthtml} style="background: lightcyan;" onclick="addSpansToHTML(getArrayOfInput(${counthtml}),'output',${counthtml})">Highlight</button>
+	<button id=${counthtml} style="background: lightcyan;" onclick="addSpansToHTML(getArrayOfInput(${counthtml}),'output')">Highlight</button>
 	<br>
 	  <label>Start:</label>
 	  <input class="message-type-inputs" id="start-${counthtml}" type="text" oninput="">
@@ -31,4 +31,19 @@ function getArrayOfInput(id){
 	var lengthVal = document.getElementById("length-"+id).value;
 	var objOut= {"start":+startVal,"length":+lengthVal,"color":+id};
 return [objOut]
+}
+
+function getArrayOfAll(allElements){
+	var startVal
+	var lengthVal
+	var arrOut = [];
+	var allElements = document.getElementsByClassName(allElements);
+		for (let i = 1;i < allElements.length; i++){
+		id = i;
+		startVal = document.getElementById("start-"+id).value;
+		lengthVal = document.getElementById("length-"+id).value;
+		arrOut.push({"start":+startVal,"length":+lengthVal,"color":+id});	
+		}
+		console.log(arrOut);
+return arrOut;
 }
